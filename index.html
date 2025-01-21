@@ -82,22 +82,23 @@
         <p>Participated in Exercise Snapdragon by the Department of Transportation Victoria. The workshop focused on cybersecurity, highlighting the strategic risks and consequences, and their impact on the transportation industry, which is an integral part of Victoria's critical infrastructure and economy.</p>
         <img src="images/Snapdragon.jpg" style="display: block; margin: 0 auto; width: 300px"><br><br>
     </div>
-        <div style="text-align: center;">
+    <div style="text-align: center;">
         <h2>ML/AI-based Telematics for Electric Vehicles</h2>
         <p>Check out Data Pipeline Architecture for Passenger Movement Analytics</p>
         <button class="btn" onclick="displayImage()">Project Summary</button>
+        
+        <!-- Image initially hidden -->
+        <img id="project-image" src="images/passenger_ml_arch02.jpg" alt="Project Summary Image">
     </div>
+
     <script>
         function displayImage() {
             var image = document.getElementById('project-image');
-            if (image.style.display === 'none') 
-            {
+            // Show the image when the button is clicked
+            if (image.style.display === 'none') {
                 image.style.display = 'block';
-            } 
-            else {
-                image.style.display = 'none';
-                 }
             }
+        }
     </script>
 </section>
 
